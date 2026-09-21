@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative pt-20 pb-12 sm:pt-24 sm:pb-16 lg:pt-24 lg:pb-16 overflow-hidden"
+      className="relative min-h-[calc(100svh-4rem)] flex items-center pt-[clamp(4.5rem,7vh,6.5rem)] pb-8 sm:pb-12 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -140,7 +140,7 @@ export const Hero: React.FC = () => {
                 }}
                 alt="Zainab Zia — AI Developer"
                 referrerPolicy="no-referrer"
-                className="relative z-10 max-h-[460px] sm:max-h-[520px] md:max-h-[560px] w-auto object-contain drop-shadow-[0_16px_50px_rgba(184,108,255,0.35)] transition-transform duration-700 ease-out group-hover:scale-[1.02] select-none pointer-events-none"
+                className="relative z-10 max-h-[380px] sm:max-h-[440px] md:max-h-[min(480px,50vh)] w-auto object-contain drop-shadow-[0_16px_50px_rgba(184,108,255,0.35)] transition-transform duration-700 ease-out group-hover:scale-[1.02] select-none pointer-events-none"
                 style={{
                   maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 100%)',
                   WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 100%)',
