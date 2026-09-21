@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden"
+      className="relative pt-20 pb-12 sm:pt-24 sm:pb-16 lg:pt-24 lg:pb-16 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
             className="lg:col-span-7 flex flex-col items-start z-10"
           >
             {/* Availability Pill */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-[11px] font-mono tracking-[0.14em] text-[#CDB4FF] mb-6">
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-[11px] font-mono tracking-[0.14em] text-[#CDB4FF] mb-4">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF8FD8] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#B86CFF]"></span>
@@ -39,13 +39,13 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Small Label */}
-            <div className="text-xs sm:text-sm font-mono uppercase tracking-[0.14em] text-[#B9AEC8] mb-4 flex items-center gap-2">
+            <div className="text-xs sm:text-sm font-mono uppercase tracking-[0.14em] text-[#B9AEC8] mb-3 flex items-center gap-2">
               <span className="text-[#B86CFF]">/</span>
               <span>{PERSONAL_INFO.role}</span>
             </div>
 
             {/* Main Headline with Serif Italic Emphasis */}
-            <h1 className="text-4xl sm:text-6xl xl:text-7xl font-light tracking-tight text-[#F7F2FF] leading-[1.08] mb-6 max-w-2xl">
+            <h1 className="text-4xl sm:text-6xl xl:text-7xl font-light tracking-tight text-[#F7F2FF] leading-[1.08] mb-4 max-w-2xl">
               I build{' '}
               <span className="font-serif-editorial italic font-normal text-[#E89BFF] relative inline-block pr-1">
                 intelligent
@@ -55,12 +55,12 @@ export const Hero: React.FC = () => {
             </h1>
 
             {/* Supporting Copy */}
-            <p className="text-base sm:text-lg text-[#B9AEC8] font-normal leading-relaxed mb-8 max-w-xl">
+            <p className="text-base sm:text-lg text-[#B9AEC8] font-normal leading-relaxed mb-6 max-w-xl">
               {PERSONAL_INFO.bioSubheadline}
             </p>
 
             {/* Call to Actions */}
-            <div className="flex flex-wrap items-center gap-4 mb-10">
+            <div className="flex flex-wrap items-center gap-4 mb-6">
               <button
                 type="button"
                 onClick={() => scrollTo('work')}
@@ -98,7 +98,7 @@ export const Hero: React.FC = () => {
           </motion.div>
 
           {/* Right Column: Hero Visual with Character PNG Illustration */}
-          <div className="lg:col-span-5 relative flex items-center justify-center min-h-[460px] sm:min-h-[520px] md:min-h-[580px]">
+          <div className="lg:col-span-5 relative flex items-center justify-center min-h-[380px] sm:min-h-[440px] md:min-h-[480px]">
             {/* Ambient Backlight Glow */}
             <div className="absolute w-72 h-72 sm:w-[420px] sm:h-[420px] rounded-full bg-gradient-to-tr from-[#6B2C91]/35 via-[#B86CFF]/25 to-[#FF8FD8]/25 blur-[100px] pointer-events-none" />
 

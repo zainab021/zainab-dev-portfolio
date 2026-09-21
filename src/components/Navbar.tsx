@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
             ? 'py-3 bg-[#0B0714]/80 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.4)]'
-            : 'py-6 bg-transparent border-b border-transparent'
+            : 'py-4 bg-transparent border-b border-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
